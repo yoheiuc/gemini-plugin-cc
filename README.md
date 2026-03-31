@@ -153,6 +153,7 @@ Context:
 
 - ジョブ保存先: `~/.gemini-plugin/jobs.json`
 - daemon PID: `~/.gemini-plugin/daemon.pid`
+- daemon heartbeat: `~/.gemini-plugin/daemon.heartbeat`（15秒以上更新がなければ stale とみなして再起動）
 - queue は in-memory（daemon 再起動時は `queued` を storage から再ポーリング）
 
 ---
@@ -194,4 +195,3 @@ gemini login
 ## 9. 積み残しタスク
 
 積み残しは `PENDING_TASKS.md` に記録しています。運用・拡張時はこのファイルを起点に進めてください。
-
