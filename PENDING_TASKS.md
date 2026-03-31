@@ -7,7 +7,7 @@
 - [ ] **SQLite ストレージ対応**: `storage.ts` の JSON 実装を抽象化し、SQLite バックエンドを追加。
 - [ ] **ジョブのキャンセル機能**: `/gemini:cancel <job_id>` を追加し、`queued`/`running` の停止を可能にする。
 - [ ] **結果フォーマット強化**: Gemini 出力をセクションごとに解析し、`Summary/Findings/Suggested Fix/Risks` へより正確にマッピング。
-- [ ] **daemon 健全性管理**: heartbeat と stale PID 検出を追加。
+- [x] **daemon 健全性管理**: heartbeat と stale PID 検出を追加。
 
 ## Medium Priority
 

@@ -17,6 +17,10 @@ export function pidPath(): string {
   return path.join(baseDir(), "daemon.pid");
 }
 
+export function heartbeatPath(): string {
+  return path.join(baseDir(), "daemon.heartbeat");
+}
+
 function ensureDir(): void {
   fs.mkdirSync(baseDir(), { recursive: true });
 }
