@@ -1,0 +1,19 @@
+name: gemini-plugin
+version: 0.1.0
+description: Gemini CLI backed async plugin for Claude Code
+commands:
+  - name: /gemini:review
+    description: Queue a Gemini review job
+    run: gemini-plugin review "{{input}}"
+  - name: /gemini:fix
+    description: Queue a Gemini fix job
+    run: gemini-plugin fix "{{input}}"
+  - name: /gemini:plan
+    description: Queue a Gemini plan job
+    run: gemini-plugin plan "{{input}}"
+  - name: /gemini:status
+    description: Check job status
+    run: gemini-plugin status "{{job_id}}"
+  - name: /gemini:result
+    description: Fetch job result
+    run: gemini-plugin result "{{job_id}}"
