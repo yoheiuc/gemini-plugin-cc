@@ -1,0 +1,19 @@
+{
+  "name": "gemini-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/bin/gemini-cli.js",
+    "dev": "tsx bin/gemini-cli.ts"
+  },
+  "bin": {
+    "gemini-plugin": "dist/bin/gemini-cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
