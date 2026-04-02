@@ -80,6 +80,20 @@ npm install
 npm run build
 ```
 
+### 2.5) 動作前チェック（任意だが推奨）
+
+```bash
+npm run doctor
+```
+
+ローカルで `gemini` CLI 導入済み前提で、`dist/bin/gemini-cli.js` のビルド成果物を確認します。
+
+`gemini` CLI の存在まで厳密に確認したい場合は以下を実行してください。
+
+```bash
+npm run doctor:strict
+```
+
 ### 3) Gemini 認証
 
 ```bash
