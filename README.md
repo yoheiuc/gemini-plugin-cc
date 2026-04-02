@@ -80,6 +80,14 @@ npm install
 npm run build
 ```
 
+### 2.5) 動作前チェック（任意だが推奨）
+
+```bash
+npm run doctor
+```
+
+`gemini` CLI の存在と、`dist/bin/gemini-cli.js` のビルド成果物を確認します。
+
 ### 3) Gemini 認証
 
 ```bash
