@@ -7,7 +7,8 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/bin/gemini-cli.js",
     "dev": "tsx bin/gemini-cli.ts",
-    "doctor": "node doctor.js"
+    "doctor": "node doctor.js",
+    "doctor:strict": "node doctor.js --check-gemini"
   },
   "bin": {
     "gemini-plugin": "dist/bin/gemini-cli.js"
